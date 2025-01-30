@@ -1,11 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment 3</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 3</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/caccb24890.js" crossorigin="anonymous"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'primary-color': '#179800',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .font-sora {
+  font-family: "Sora", serif;
+}
+  </style>
 </head>
-<body>
+
+<body class="font-sora">
+  <!-- header section -->
+  <header class="bg-gradient-to-t from-red-200 to-red-50">
+    <!-- navbar -->
+    <nav class="container mx-auto mb-24">
+      <div class="navbar">
+        <div class="navbar-start">
+          <!-- header logo -->
+          <div>
+            <img src="c2-assets/logo-header.png" alt="">
+          </div>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>Product</a></li>
+            <li><a>Services</a></li>
+            <li><a>Contact us</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end hidden lg:flex gap-3">
+          <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+          <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+          <button class="btn btn-outline border-primary-color">Login</button>
+          <button class="btn border-0 bg-primary-color">Resister</button>
+          
+        </div>
+        <div tabindex="0" role="button" class="btn btn-ghost navbar-end lg:hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+          </svg>
+        </div>
+      </div>
+      <hr class="lg:hidden border-primary-color">
+    </nav>
     
+    <!-- banner section -->
+     <div class="justify-items-center mb-24">
+      <!-- text content -->
+       <div class="text-center lg:w-1/2 space-y-4 lg:space-y-8">
+        <h1 class="text-3xl lg:text-6xl font-semibold animate-bounce">Freshness <span class="text-primary-color">You Can <br>
+          Count</span> On, Prices You’ll Love!</h1>
+        <p class="lg:text-xl">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you covered every day!</p>
+       </div>
+       <!-- image container -->
+        <div>
+          <img src="c2-assets/hero-vegetables.png" alt="">
+        </div>
+     </div>
+  </header>
 </body>
+
 </html>
